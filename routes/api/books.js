@@ -4,5 +4,6 @@ const booksController = require("../../controllers/booksController");
 // Matches with "/api/books"
 router.route("/")
   .get(booksController.findAll)
+  .post(booksController.createBook);
 
 module.exports = router;
